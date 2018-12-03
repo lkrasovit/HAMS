@@ -4,11 +4,12 @@ app.config(function($routeProvider) {
     $routeProvider
     .when("/", {
         templateUrl: "app/home/home.html"
-    }).when("/login", {
-        templateUrl: "app/login/login.html",
-        controller: "loginCtrl"
+    }).when("/home", {
+        templateUrl: "app/home/home.html",
+        // controller: "loginCtrl"
 
-    }).when("/signup", {
+    })
+    // .when("/signup", {
 
     // }).when("/messages", {
     //     templateUrl: "app/messages/msgList.html",

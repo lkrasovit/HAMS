@@ -1,14 +1,26 @@
 /* Styles go here */
 body{
-    background-color: grey;
-       font-family: Bitter;
-   }
-   
+  background:url("http://www.timurtek.com/wp-content/uploads/2014/10/form-bg.jpg"); 
+    /* padding:50px; */
+    font-family: Bitter;
+}
+
    h1 {
        color: black;
        text-align: center;
    }
-   
+
+   /* nav-bar */
+   button:focus {
+    outline: 0;
+}
+
+.navbar .dropdown-menu .form-control {
+    width: 200px;
+}
+
+
+
    .login-box {
      width: 100%;
      max-width: 400px;
