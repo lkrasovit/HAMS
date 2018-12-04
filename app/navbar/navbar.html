@@ -16,8 +16,9 @@
                 <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"> <i class="fa fa-cog fa-fw fa-lg"></i></a></li>
                 <li class="dropdown order-1">
                     <button  ng-hide="isUserLoggedIn()" type="button"  class="btn btn-outline-secondary dropdown-toggle" >SignUp</button>
+                    <a class="nav-link" href="#" ng-click="logout()">
                     <button ng-show="isUserLoggedIn()" type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Logout
-                        <span class="caret"></span></button>
+                        <span class="caret"></span></button></a>
                         <a href="#!/login">
                     <button  ng-hide="isUserLoggedIn()" type="button" id="dropdownMenu1" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Login
                             <span class="caret"></span></button></a>

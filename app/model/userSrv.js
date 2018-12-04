@@ -22,8 +22,12 @@ app.factory("user", function($q) {
     function isLoggedIn() {
        return activeUser ? true : false;
    }
+   function logout() {
+    activeUser = null;
+}
     return {
        login: login,
-       isLoggedIn: isLoggedIn
+       isLoggedIn: isLoggedIn,
+       logout: logout
    }
 }) 
