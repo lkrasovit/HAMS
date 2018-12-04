@@ -10,6 +10,8 @@ app.config(function ($routeProvider) {
         }).when("/login", {
             templateUrl: "app/login/login.html",
             controller: "loginCtrl"
+        }).when("/recipes", {
+            templateUrl: "app/recipes/recipeHome.html"
         })
 
 
