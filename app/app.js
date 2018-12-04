@@ -1,13 +1,16 @@
 var app = angular.module("recipeHomeApp", ["ngRoute"]);
 
-app.config(function($routeProvider) {
+app.config(function ($routeProvider) {
     $routeProvider
-    .when("/", {
-        templateUrl: "app/home/home.html"
-    }).when("/home", {
-        templateUrl: "app/home/home.html"
-                // controller: "loginCtrl"
- })
+        .when("/", {
+            templateUrl: "app/home/home.html"
+        }).when("/home", {
+            templateUrl: "app/home/home.html"
+
+        }).when("/login", {
+            templateUrl: "app/login/login.html",
+            controller: "loginCtrl"
+        })
 
 
     // }).when("/messages", {
@@ -21,4 +24,4 @@ app.config(function($routeProvider) {
     // })
 })
 
-   
+
