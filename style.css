@@ -32,7 +32,7 @@ body{
      max-width: 400px;
      margin: auto;
    }
-   /* .auth-head-icon {
+   .auth-head-icon {
      position: relative;
      height: 60px;
      width: 60px;
@@ -47,4 +47,7 @@ body{
      transform: translateY(-50%);
      z-index: 2;
    }
-    */
+   .fa-user {
+    color: #20a6e485;
+
+   }
