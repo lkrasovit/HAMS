@@ -11,7 +11,7 @@ app.factory("user", function($q) {
        var async = $q.defer();
         if (email === "lena@lena.com" && pwd === "123") {
            // success login
-           activeUser = new User({id: "1", fname:"Nir", lname: "Channes", 
+           activeUser = new User({id: "1", fname:"Lena", lname: "Channes", 
            email: "lena@lena.com", pwd: "123"});
             async.resolve(activeUser);
        } else {
