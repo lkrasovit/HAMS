@@ -1,0 +1,18 @@
+{
+    "users": [
+        {
+            "id": 1,
+            "fname": "Lena",
+            "lname": "Kras",
+            "email": "lena@lena.com",
+            "pwd": "123"
+        },
+        {
+            "id": 2,
+            "fname": "John",
+            "lname": "Doe",
+            "email": "john@john.com",
+            "pwd": "123"
+        }
+    ]
+}
