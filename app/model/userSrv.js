@@ -7,8 +7,17 @@ app.factory("user", function($q,$http) {
        this.email = plainUser.email;
        this.pwd = plainUser.pwd;
    }
-    function login(email, pwd) {
-       var async = $q.defer();
+    // function login(email, pwd) {
+    //    var async = $q.defer();
+
+    //    if (email === "nir@nir.com" && pwd === "123") {
+    //     // success login
+    //     activeUser = new User({id: "1", fname:"lena", lname: "Channes", 
+    //     email: "lena@lena.com", pwd: "123"});
+    //      async.resolve(activeUser);
+    // } else {
+    //     async.reject();
+    // }
        var loginURL = "http://my-json-server.typicode.com/lkrasovit/HAMS/users?email=" +
        email + "&pwd=" + pwd;
    $http.get(loginURL).then(function(response) {
