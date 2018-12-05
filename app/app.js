@@ -11,7 +11,8 @@ app.config(function ($routeProvider) {
             templateUrl: "app/login/login.html",
             controller: "loginCtrl"
         }).when("/recipes", {
-            templateUrl: "app/recipes/recipeHome.html"
+            templateUrl: "app/recipes/recipeHome.html",
+            controller: "recipeHomeCtrl"
         }).when("/messages",{
             templateUrl:"app/messages/messages.html"
         }).when("/signup",{

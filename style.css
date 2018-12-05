@@ -50,5 +50,8 @@ body{
    }
    .fa-user,.fa-user-plus {
     color: #07c6f6ef;
-
    }
+   .recipe > img {
+    object-fit: cover;
+    height: 300px;
+} 
