@@ -15,8 +15,8 @@
             <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
                 <li class="nav-item order-2 order-md-1"><a href="#" class="nav-link" title="settings"> <i class="fa fa-cog fa-fw fa-lg"></i></a></li>
                 <li class="dropdown order-1">
-                    <button ng-hide="isUserLoggedIn()" type="button" class="btn btn-outline-secondary dropdown-toggle">SignUp</button>
-
+                    <a href="#!/signup">
+                        <button ng-hide="isUserLoggedIn()" type="button" class="btn btn-outline-secondary dropdown-toggle">SignUp</button></a>
                     <button ng-click="logout()" ng-show="isUserLoggedIn()" type="button" data-toggle="dropdown" class="btn btn-outline-secondary dropdown-toggle">Logout
                         <span class="caret"></span></button>
                     <a href="#!/login">

@@ -14,6 +14,8 @@ app.config(function ($routeProvider) {
             templateUrl: "app/recipes/recipeHome.html"
         }).when("/messages",{
             templateUrl:"app/messages/messages.html"
+        }).when("/signup",{
+            templateUrl:"app/signup/signup.html"
         })
 
 
