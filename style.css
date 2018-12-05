@@ -2,6 +2,7 @@
 body{
  
   background:url("http://www.timurtek.com/wp-content/uploads/2014/10/form-bg.jpg"); 
+  
   /* padding:50px; */
   font-family: Bitter;
 }
@@ -47,7 +48,7 @@ body{
      transform: translateY(-50%);
      z-index: 2;
    }
-   .fa-user {
-    color: #20a6e485;
+   .fa-user,.fa-user-plus {
+    color: #07c6f6ef;
 
    }

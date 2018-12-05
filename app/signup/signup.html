@@ -1,0 +1,38 @@
+<form>
+        <div class="card login-box shadow mt-5">
+            <div class="text-center">
+                <span class="auth-head-icon"> <i class="fas fa-user-plus"></i></span>
+            </div>
+            <div class="card-body p-4">
+                <h4 class="card-title text-center mb-4">Create a new account</h4>
+                <!-- <p>or <a href="#">create an account</a></p> -->
+    
+                <!-- <div class="alert alert-danger" role="alert" ng-show="invalidLogin">Invalid email or password</div> -->
+                <form class="form-pink" action="javascript:;">
+                    <div class="md-form mt-4">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                        <div class="md-form mt-4">
+                        <input type="number" class="form-control" placeholder="Apartnent">
+                    </div>
+                    <div class="md-form mt-4">
+                        <input ng-model="email" type="email" class="form-control" id="inputEmail" placeholder="Email Address">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="md-form mt-4">
+                        <input ng-model="pwd" type="password" class="form-control" id="inputPassword" placeholder="Password">
+                    </div>
+                    <!-- <div class="flexbox mb-5 mt-4">
+                            <label class="ui-switch switch-icon">
+                                <input type="checkbox" checked>
+                                <span class="ml-0"></span>
+                                Remember me
+                            </label>
+                            <a href="javascript:;">Forgot password?</a> -->
+            </div>
+            <button type="submit" class="btn btn-primary btn-rounded btn-block" ng-click="create()">CREATE</button>
+    
+    
+        </div>
+        
+    </form>
