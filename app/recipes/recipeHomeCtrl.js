@@ -1,4 +1,4 @@
-app.controller("recipeGalleryCtrl", function($scope) {
+app.controller("recipeHomeCtrl", function($scope) {
     $scope.recipes = [
        {
            id: 1,
