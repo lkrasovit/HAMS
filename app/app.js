@@ -17,18 +17,13 @@ app.config(function ($routeProvider) {
             templateUrl:"app/messages/messages.html"
         }).when("/signup",{
             templateUrl:"app/signup/signup.html"
-        })
+        }).when("/new" , {
+            templateUrl: "app/recipes/newRecipe.html",
+           controller: "newRecipeCtrl"
+       })
 
 
-    // }).when("/messages", {
-    //     templateUrl: "app/messages/msgList.html",
-    //     controller: "msgListCtrl"
-    // }).when("/new" , {
-    //     templateUrl: "app/messages/newMsg.html",
-    //     controller: "newMsgCtrl"
-    // }).when("/recipe/:id" , {
-
-    // })
+   
 })
 
 
