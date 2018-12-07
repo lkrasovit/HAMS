@@ -13,8 +13,6 @@ app.config(function ($routeProvider) {
         }).when("/recipes", {
             templateUrl: "app/recipes/recipeHome.html",
             controller: "recipeHomeCtrl"
-        }).when("/messages",{
-            templateUrl:"app/messages/messages.html"
         }).when("/signup",{
             templateUrl:"app/signup/signup.html"
         }).when("/new" , {

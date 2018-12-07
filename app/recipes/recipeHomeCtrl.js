@@ -1,4 +1,10 @@
-app.controller("newRecipeCtrl", function($scope, recipes, $location, user) {
+app.controller("recipeHomeCtrl", function($scope, recipes, user, $location) {
+    // Checking if the user is currently logged in,
+   // if not redirecting to the home page
+   if (!user.isLoggedIn()) {
+       $location.path("/");
+       return;
+   }
     
     // Checking if the user is currently logged in,
     // if not redirecting to the home page
