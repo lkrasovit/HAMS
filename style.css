@@ -51,8 +51,15 @@ body{
    .fa-user,.fa-user-plus {
     color: #07c6f6ef;
    }
-   /* .recipe > img {
-    object-fit: cover;
-    height: 300px;
-}  */
-/* recipeHome */
+   /* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  /* background-color: #f44336; */
+  color: #f44336;
+}

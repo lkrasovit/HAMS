@@ -20,6 +20,8 @@ app.controller("recipeHomeCtrl", function($scope, recipes, user, $location) {
             console.log(err);
         })
     }
+
+   
  }) 
 //  app.controller("recipeHomeCtrl", function ($scope) {
 //     $scope.recipes = [
