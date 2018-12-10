@@ -12,14 +12,19 @@ app.controller("recipeHomeCtrl", function($scope, recipes, user, $location) {
         $location.path("/");
         return;
     }
-     $scope.createRecipe = function () {
-        recipes.createRecipe($scope.name, $scope.description, 
-            $scope.ingrediants, $scope.steps,  $scope.image).then(function () {
-             $location.path("/recipes")
-         }, function (err) {
-            console.log(err);
-        })
-    }
+    recipes.getActiveUserRecipes().then(function (recipes) {
+        $scope.recipes = recipes;
+    }, function(error) {
+        
+    })
+    //  $scope.createRecipe = function () {
+    //     recipes.createRecipe($scope.name, $scope.description, 
+    //         $scope.ingrediants, $scope.steps,  $scope.image).then(function () {
+    //          $location.path("/recipes")
+    //      }, function (err) {
+    //         console.log(err);
+    //     })
+    // }
 
    
  }) 
