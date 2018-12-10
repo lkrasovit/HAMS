@@ -3,12 +3,12 @@
 <div class="container  mt-5">
     <h1>Whats a new?</h1>
     <div id="accordion">
-        <div class="card">
+        <div class="card" ng-repeat="recipe in recipes">
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
                         aria-controls="collapseOne">
-                        Разворачиваемая панель #1
+                        {{recipe.name}}
                     </button>
 
                     <div class="btn-group btn-group-toggle" data-toggle="buttons">
@@ -16,7 +16,7 @@
                               <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
                             </label> -->
                         <label class="btn btn-info">
-                            <input type="radio" name="options"  autocomplete="off"> Info
+                            <input type="radio" name="options" autocomplete="off"> Info
                         </label>
                         <label class="btn btn-danger">
                             <input type="radio" name="options" id="option3" autocomplete="off">Importmant
@@ -24,28 +24,22 @@
                     </div>
                     <button type="button" class="btn btn-success">Update</button>
                     <button type="button" class="btn btn-info"><i class="far fa-trash-alt"></i></button>
-                    
+
                     <!-- <i class="fa fa-trash" aria-hidden="true"></i> -->
-                    <button type="button" class="close" aria-label="Close">
+                    <!-- <button type="button" class="close" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
-                    </button>
+                    </button> -->
                 </h5>
             </div>
 
             <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
+                <div class="card-body" class="card-text">
+                    {{recipe.description}}
                 </div>
-               
+
             </div>
         </div>
-        <div class="card ">
+        <!-- <div class="card ">
             <div class="card-header" id="headingTwo">
                 <h5 class="mb-0">
                     <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
@@ -86,7 +80,7 @@
                     labore sustainable VHS.
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
 
 
