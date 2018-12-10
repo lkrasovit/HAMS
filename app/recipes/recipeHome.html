@@ -6,25 +6,23 @@
         <div class="card" ng-repeat="recipe in recipes">
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
-                        aria-controls="collapseOne">
-                        {{recipe.name}}
+                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    
+                        <h3>{{recipe.name}}</h3>
                     </button>
 
-                    <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                        <!-- <label class="btn btn-secondary active">
-                              <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
-                            </label> -->
+                    <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
+
                         <label class="btn btn-info">
                             <input type="radio" name="options" autocomplete="off"> Info
                         </label>
                         <label class="btn btn-danger">
                             <input type="radio" name="options" id="option3" autocomplete="off">Importmant
                         </label>
-                    </div>
-                    <button type="button" class="btn btn-success">Update</button>
-                    <button type="button" class="btn btn-info"><i class="far fa-trash-alt"></i></button>
 
+                        <button type="button" class="btn btn-success">Update</button>
+                        <button type="button" class="btn btn-info float-right"><i class="far fa-trash-alt"></i></button>
+                    </div>
                     <!-- <i class="fa fa-trash" aria-hidden="true"></i> -->
                     <!-- <button type="button" class="close" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
@@ -32,67 +30,27 @@
                 </h5>
             </div>
 
-            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body" class="card-text">
+            <div id="collapseOne"  aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="card-body" class="card-text" class="collapse show" >
+                    <img class="card-img-top rounded"   ng-src="{{recipe.imgUrl}}" >
                     {{recipe.description}}
                 </div>
 
             </div>
         </div>
-        <!-- <div class="card ">
-            <div class="card-header" id="headingTwo">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
-                        aria-expanded="false" aria-controls="collapseTwo">
-                        Разворачиваемая панель #2
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
-                </div>
-            </div>
-        </div>
-        <div class="card">
-            <div class="card-header" id="headingThree">
-                <h5 class="mb-0">
-                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
-                        aria-expanded="false" aria-controls="collapseThree">
-                        Разворачиваемая панель #3
-                    </button>
-                </h5>
-            </div>
-            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-                <div class="card-body">
-                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3
-                    wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum
-                    eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-                    assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred
-                    nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer
-                    farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus
-                    labore sustainable VHS.
-                </div>
-            </div>
-        </div>-->
-    </div>
 
 
-    <div class="row">
-        <div class="col-sm-6 col-md-4 my-2" ng-repeat="recipe in recipes">
-            <div class="card recipe">
-                <img class="card-img-top" ng-src="{{recipe.imgUrl}}" alt="">
-                <div class="card-body">
-                    <h4 class="card-title">{{recipe.name}}</h4>
-                    <p class="card-text">{{recipe.description}}</p>
+
+        <!-- <div class="row">
+            <div class="col-sm-6 col-md-4 my-2" ng-repeat="recipe in recipes">
+                <div class="card recipe">
+                    <img class="card-img-top" ng-src="{{recipe.imgUrl}}" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">{{recipe.name}}</h4>
+                        <p class="card-text">{{recipe.description}}</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
