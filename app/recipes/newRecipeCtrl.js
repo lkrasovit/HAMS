@@ -15,4 +15,12 @@ app.controller("newRecipeCtrl", function ($scope, recipes, $location, user) {
                 console.log(err);
             })
     }
+    // close CreateRecipe
+    $scope.function closeWin() {
+        myWindow.close();
+    }
+    // $scope.("#cancel_edit").click(function(){
+    //     window.open('','_parent',''); 
+    //     window.close(); 
+    // });
 }) 
