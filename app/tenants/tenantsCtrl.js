@@ -1,16 +1,17 @@
 app.controller("tenantsCtrl", function ($scope){
 
    var options = {
-        valueNames: [ 'id', 'fname',"lname", 'apr', 'mail' ]
+        valueNames: [ 'id', 'fname',"lname", 'apr', 'ml' ]
       };
 
 // Init list
 var contactList = new List('contacts', options);
   
 var idField = $('#id-field'),
-    nameField = $('#name-field'),
-    ageField = $('#age-field'),
-    cityField = $('#city-field'),
+    fnameField = $('#fname-field'),
+    lnameField = $('#lname-field'),
+    aprField = $('#apr-field'),
+    mlField = $('#ml-field'),
     addBtn = $('#add-btn'),
     editBtn = $('#edit-btn').hide(),
     removeBtns = $('.remove-item-btn'),
@@ -22,9 +23,10 @@ refreshCallbacks();
 addBtn.click(function() {
   contactList.add({
     id: Math.floor(Math.random()*110000),
-    name: nameField.val(),
-    age: ageField.val(),
-    city: cityField.val()
+    fname: fnameField.val(),
+    lname: lnameField.val(),
+   apr: aprField.val(),
+    ml: mlField.val()
   });
   clearFields();
   refreshCallbacks();
@@ -34,9 +36,10 @@ editBtn.click(function() {
   var item = contactList.get('id', idField.val())[0];
   item.values({
     id:idField.val(),
-    name: nameField.val(),
-    age: ageField.val(),
-    city: cityField.val()
+    fname: fnameField.val(),
+    lname: lnameField.val(),
+    apr: aprField.val(),
+    ml: mlField.val()
   });
   clearFields();
   editBtn.hide();
@@ -57,9 +60,10 @@ function refreshCallbacks() {
     var itemId = $(this).closest('tr').find('.id').text();
     var itemValues = contactList.get('id', itemId)[0].values();
     idField.val(itemValues.id);
-    nameField.val(itemValues.name);
-    ageField.val(itemValues.age);
-    cityField.val(itemValues.city);
+    fnameField.val(itemValues.fname);
+    lnameField.val(itemValues.lname);
+    aprField.val(itemValues.apr);
+    mlField.val(itemValues.ml);
     
     editBtn.show();
     addBtn.hide();
@@ -67,9 +71,10 @@ function refreshCallbacks() {
 }
 
 function clearFields() {
-  nameField.val('');
-  ageField.val('');
-  cityField.val('');
+  fnameField.val('');
+  lnameField.val('');
+  aprField.val('');
+  mlField.val('');
 }
 
 

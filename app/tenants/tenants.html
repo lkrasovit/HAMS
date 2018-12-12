@@ -65,81 +65,101 @@
 <navbar-recipe></navbar-recipe>
 
 
+<div id="contacts">
+    <div class=" card container  mt-5">
+        <h4 class="card-title text-center mt-4">Resident list:</h4>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="sort" data-sort="name" scope="col">#</th>
+                    <th scope="col">First</th>
+                    <th></th>
+                    <th></th>
+                    <th scope="col">Last</th>
+                    <th></th>
+                    <th scope="col">Apartment</th>
+                    <th></th>
+                            <th></th>
+                    <th scope="col">Handle</th>
+                    <th></th>
+                    <th colspan="2">
+                        <input type="text" class="search" placeholder="Search tenants" />
+                    </th>
+                </tr>
 
-<div class=" card container  mt-5">
-    <h4 class="card-title text-center mt-4">Resident list:</h4>
-    <table class="table">
-        <thead>
-            <tr>
-                <th class="sort" data-sort="name" scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Apartment</th>
-                <th scope="col">Handle</th>
-                <th colspan="2">
-                    <input type="text" class="search" placeholder="Search tenants" />
-                </th>
-            </tr>
-
-        </thead>
-        <tbody class="list">
-            <tr>
-                <th   class="id" scope="row">1</th>
-                <td class="fname">Mark</td>
-                <td class="lname">Otto</td>
-                <td class="apr">13</td>
-                <td class="mail">@mdo</td>
-                <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
-                <td class="remove"><button class="remove-item-btn float-right">Remove</button></td>
-            </tr>
-            <tr>
-                <th   class="id" scope="row">2</th>
-                <td class="fname">Mark</td>
-                <td class="lname">Otto</td>
-                <td class="apr">13</td>
-                <td class="mail">@mdo</td>
-                <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
-                <td class="remove"><button class="remove-item-btn float-right">Remove</button></td>
-            </tr>
-            <tr>
-                <th   class="id" scope="row">3</th>
-                <td class="fname">Mark</td>
-                <td class="lname">Otto</td>
-                <td class="apr">13</td>
-                <td class="ml">@mdo</td>
-                <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
-                <td class="remove"><button class="remove-item-btn float-right">Remove</button><span class="glyphicon glyphicon-trash"></span></td>
-                <!-- <td><button ng-if="col.dataType === 'command'" class="btn btn-danger btn-sm" ng-click="demo.del(row)"
+            </thead>
+            <tbody class="list">
+                <tr>
+                    <th class="id" scope="row">1</th>
+                    <td class="fname">Mark   </td>
+                    <td></td>
+                    <td></td>
+                                       <td class="lname">Otto</td>
+                    <td></td>
+                    <td class="apr">13</td>
+                    <td></td>
+                    <td></td>
+                    <td class="mail">@mdo</td>
+                    <td></td>
+                    <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
+                    <td class="remove"><button class="remove-item-btn float-right"><i class="far fa-trash-alt"></i></button></td>
+                </tr>
+                <tr>
+                    <th class="id" scope="row">2</th>
+                    <td class="fname">Mark </td>
+                    <td></td>
+                    <td></td>
+                    <td class="lname">Otto</td>
+                    <td></td>
+                    <td class="apr">13</td>
+                    <td></td>
+                    <td></td>
+                    <td class="mail">@mdo</td>
+                    <td></td>
+                    <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
+                    <td class="remove"><button class="remove-item-btn float-right"><i class="far fa-trash-alt"></i></button></td>
+                </tr>
+                <tr>
+                    <th class="id" scope="row">3</th>
+                    <td class="fname">Mark</td>
+                    <td></td>
+                    <td></td>
+                    <td class="lname">Otto</td>
+                    <td></td>
+                    <td class="apr">13</td>
+                    <td></td>
+                    <td></td>
+                    <td class="ml">@mdo</td>
+                    <td></td>
+                    <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
+                    <td class="remove"><button class="remove-item-btn float-right"><i class="far fa-trash-alt"></i></button><span class="glyphicon glyphicon-trash"></span></td>
+                    <!-- <td><button ng-if="col.dataType === 'command'" class="btn btn-danger btn-sm" ng-click=".del(row)"
                         ng-disabled="!demo.isEditing"><span class="glyphicon glyphicon-trash"></span></button>
                 </td> -->
-            </tr>
-        </tbody>
-    </table>
-    <button type="button" onclick="closeWin()" class="close" id="cancel_edit" aria-label="Close">
-        <span aria-hidden="true">&times;</span>
-    </button>
-    <table class="mb-4">
-        <td class="name">
-            <input type="hidden" id="id-field" />
-            <input type="text" id="fname-field" placeholder="First name" />
-        </td>
-        <td>
-            <input type="text" id="lname-field" placeholder="Last name" />
-        </td>
-        <td class="apr">
-            <input type="text" id="apr-field" placeholder="Appartment" />
-        </td>
-        <td class="ml">
-            <input type="text" id="ml-field" placeholder="Mail" />
-        </td>
-        <td class="add">
-            <button id="add-btn">Add</button>
-            <button id="edit-btn">Edit</button>
-        </td>
-    </table>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" onclick="closeWin()" class="close" id="cancel_edit" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        <table class="mb-4">
+            <td class="name">
+                <input type="hidden" id="id-field" />
+                <input type="text" id="fname-field" placeholder="First name" />
+            </td>
+            <td>
+                <input type="text" id="lname-field" placeholder="Last name" />
+            </td>
+            <td class="apr">
+                <input type="text" id="apr-field" placeholder="Appartment" />
+            </td>
+            <td class="ml">
+                <input type="text" id="ml-field" placeholder="Mail" />
+            </td>
+            <td class="add">
+                <button id="add-btn">Add</button>
+                <button id="edit-btn">Edit</button>
+            </td>
+        </table>
+    </div>
 </div>
-
-
-
-
-
