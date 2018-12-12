@@ -71,7 +71,7 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">#</th>
+                <th class="sort" data-sort="name" scope="col">#</th>
                 <th scope="col">First</th>
                 <th scope="col">Last</th>
                 <th scope="col">Apartment</th>
@@ -82,33 +82,36 @@
             </tr>
 
         </thead>
-        <tbody>
+        <tbody class="list">
             <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>13</td>
-                <td>@mdo</td>
+                <th   class="id" scope="row">1</th>
+                <td class="fname">Mark</td>
+                <td class="lname">Otto</td>
+                <td class="apr">13</td>
+                <td class="mail">@mdo</td>
                 <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
                 <td class="remove"><button class="remove-item-btn float-right">Remove</button></td>
             </tr>
             <tr>
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>Thornton</td>
-                <td>13</td>
-                <td>@fat</td>
+                <th   class="id" scope="row">2</th>
+                <td class="fname">Mark</td>
+                <td class="lname">Otto</td>
+                <td class="apr">13</td>
+                <td class="mail">@mdo</td>
                 <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
                 <td class="remove"><button class="remove-item-btn float-right">Remove</button></td>
             </tr>
             <tr>
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>the Bird</td>
-                <td>13</td>
-                <td>@twitter</td>
+                <th   class="id" scope="row">3</th>
+                <td class="fname">Mark</td>
+                <td class="lname">Otto</td>
+                <td class="apr">13</td>
+                <td class="ml">@mdo</td>
                 <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
-                <td class="remove"><button class="remove-item-btn float-right">Remove</button></td>
+                <td class="remove"><button class="remove-item-btn float-right">Remove</button><span class="glyphicon glyphicon-trash"></span></td>
+                <!-- <td><button ng-if="col.dataType === 'command'" class="btn btn-danger btn-sm" ng-click="demo.del(row)"
+                        ng-disabled="!demo.isEditing"><span class="glyphicon glyphicon-trash"></span></button>
+                </td> -->
             </tr>
         </tbody>
     </table>
@@ -123,10 +126,10 @@
         <td>
             <input type="text" id="lname-field" placeholder="Last name" />
         </td>
-        <td class="age">
+        <td class="apr">
             <input type="text" id="apr-field" placeholder="Appartment" />
         </td>
-        <td class="city">
+        <td class="ml">
             <input type="text" id="ml-field" placeholder="Mail" />
         </td>
         <td class="add">
@@ -135,3 +138,8 @@
         </td>
     </table>
 </div>
+
+
+
+
+
