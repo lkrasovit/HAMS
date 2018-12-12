@@ -1,0 +1,137 @@
+<div id="contacts">
+    <table>
+        <thead>
+            <tr>
+                <th class="sort" data-sort="name">Name</th>
+                <th class="sort" data-sort="age">Age</th>
+                <th class="sort" data-sort="city">City</th>
+                <th colspan="2">
+                    <input type="text" class="search" placeholder="Search contact" />
+                </th>
+            </tr>
+        </thead>
+        <tbody class="list">
+            <tr>
+                <td class="id" style="display:none;">1</td>
+                <td class="name">Jonny</td>
+                <td class="age">27</td>
+                <td class="city">Stockholm</td>
+                <td class="edit"><button class="edit-item-btn">Edit</button></td>
+                <td class="remove"><button class="remove-item-btn">Remove</button></td>
+            </tr>
+            <tr>
+                <td class="id" style="display:none;">2</td>
+                <td class="name">Jonas</td>
+                <td class="age">-132</td>
+                <td class="city">Berlin</td>
+                <td class="edit"><button class="edit-item-btn">Edit</button></td>
+                <td class="remove"><button class="remove-item-btn">Remove</button></td>
+            </tr>
+            <tr>
+                <td class="id" style="display:none;">3</td>
+                <td class="name">Gustaf</td>
+                <td class="age">-23</td>
+                <td class="city">Sundsvall</td>
+                <td class="edit"><button class="edit-item-btn">Edit</button></td>
+                <td class="remove"><button class="remove-item-btn">Remove</button></td>
+            </tr>
+            <tr>
+                <td class="id" style="display:none;">4</td>
+                <td class="name">Fredrik</td>
+                <td class="age">26</td>
+                <td class="city">Goteborg</td>
+                <td class="edit"><button class="edit-item-btn">Edit</button></td>
+                <td class="remove"><button class="remove-item-btn">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <table>
+        <td class="name">
+            <input type="hidden" id="id-field" />
+            <input type="text" id="name-field" placeholder="Name" />
+        </td>
+        <td class="age">
+            <input type="text" id="age-field" placeholder="Age" />
+        </td>
+        <td class="city">
+            <input type="text" id="city-field" placeholder="City" />
+        </td>
+        <td class="add">
+            <button id="add-btn">Add</button>
+            <button id="edit-btn">Edit</button>
+        </td>
+    </table>
+</div>
+<navbar-recipe></navbar-recipe>
+
+
+
+<div class=" card container  mt-5">
+    <h4 class="card-title text-center mt-4">Resident list:</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">First</th>
+                <th scope="col">Last</th>
+                <th scope="col">Apartment</th>
+                <th scope="col">Handle</th>
+                <th colspan="2">
+                    <input type="text" class="search" placeholder="Search tenants" />
+                </th>
+            </tr>
+
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>Otto</td>
+                <td>13</td>
+                <td>@mdo</td>
+                <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
+                <td class="remove"><button class="remove-item-btn float-right">Remove</button></td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>Thornton</td>
+                <td>13</td>
+                <td>@fat</td>
+                <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
+                <td class="remove"><button class="remove-item-btn float-right">Remove</button></td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>the Bird</td>
+                <td>13</td>
+                <td>@twitter</td>
+                <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
+                <td class="remove"><button class="remove-item-btn float-right">Remove</button></td>
+            </tr>
+        </tbody>
+    </table>
+    <button type="button" onclick="closeWin()" class="close" id="cancel_edit" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+    </button>
+    <table class="mb-4">
+        <td class="name">
+            <input type="hidden" id="id-field" />
+            <input type="text" id="fname-field" placeholder="First name" />
+        </td>
+        <td>
+            <input type="text" id="lname-field" placeholder="Last name" />
+        </td>
+        <td class="age">
+            <input type="text" id="apr-field" placeholder="Appartment" />
+        </td>
+        <td class="city">
+            <input type="text" id="ml-field" placeholder="Mail" />
+        </td>
+        <td class="add">
+            <button id="add-btn">Add</button>
+            <button id="edit-btn">Edit</button>
+        </td>
+    </table>
+</div>
