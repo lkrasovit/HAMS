@@ -51,6 +51,36 @@
             "steps": "Pout eggs and then tomatto",
             "imgUrl": "http://www.spicechronicles.com/wp-content/uploads/2015/09/Shakshouka_1_650.jpg",
             "userId": 2
-        }        
+        }
+    ],
+    "tenants": [
+        {
+            "id": 1,
+            "fname": "Lena",
+            "lname": "Kras",
+            "apr": "13",
+            "ml": "lena@lena.com"
+        },
+        {
+            "id": 2,
+            "fname": "John",
+            "lname": "Doe",
+            "apr": "14",
+            "ml": "john@john.com"
+        },
+        {
+            "id": 3,
+            "fname": "Mark",
+            "lname": "Otto",
+            "apr": "15",
+            "ml": "mark@mark.com"
+        },
+        {
+            "id": 4,
+            "fname": "lina",
+            "lname": "Krow",
+            "apr": "10",
+            "ml": "lina@lina.com"
+        }
     ]
-} 
+}
