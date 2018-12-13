@@ -20,7 +20,7 @@ app.config(function ($routeProvider) {
            controller: "newRecipeCtrl",
        }).when("/tenants",{
            templateUrl:"app/tenants/tenants.html",
-           controller:"tenantsCtr"
+           controller:"tenantsCtrl"
        })
 
 
