@@ -53,20 +53,20 @@ body{
     color: #07c6f6ef;
    }
    /* Style the close button */
-.close {
+ .close {
   position: absolute;
   right: 0;
   top: 0;
   padding: 12px 16px 12px 16px;
 }
 
-.close:hover {
-  /* background-color: #f44336; */
+/* .close:hover {
+  background-color: #f44336;
   color: #f44336;
-}
+}  */
 img {
   width: 200px;
-   /* height: 100px;  */
+    height: 100px;  
  border: 2px solid black;
   padding: 5px;
   margin:  5px 10px 10px 10px;

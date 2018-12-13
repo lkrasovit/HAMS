@@ -2,37 +2,30 @@
 
 <div class="container  mt-5">
     <h1>Whats a new?</h1>
-    <div id="accordion">
-        <div class="card" ng-repeat="recipe in recipes">
+    <div id="accordion"  >
+        <div class="card"  ng-repeat="recipe in recipes">
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
-                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                    
+                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+
                         <h3>{{recipe.name}}</h3>
                     </button>
-
-                    <div class="btn-group btn-group-toggle float-right" data-toggle="buttons">
-
-                        <label class="btn btn-info">
-                            <input type="radio" name="options" autocomplete="off"> Info
-                        </label>
-                        <label class="btn btn-danger">
-                            <input type="radio" name="options" id="option3" autocomplete="off">Importmant
-                        </label>
-
+                    <i class='fas fa-bolt'  ng-show="clicked" style='font-size:36px;color:red'></i>
+                    <div class="  float-right" data-toggle="buttons">
+                         
+                        <button type="button" ng-click="click($index)" class="btn btn-info">Info</button>
+                        
                         <button type="button" class="btn btn-success">Update</button>
-                        <button type="button" class="btn btn-info float-right"  ng-click="deleteRow($index)"><i class="far fa-trash-alt"></i></button>
+                        <button type="button" class="btn btn-danger" ng-click="deleteRow($index)"><i class="far fa-trash-alt"></i></button>
                     </div>
-                    <!-- <i class="fa fa-trash" aria-hidden="true"></i> -->
-                    <!-- <button type="button" class="close" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button> -->
+
                 </h5>
             </div>
 
-            <div id="collapseOne"  aria-labelledby="headingOne" data-parent="#accordion">
-                <div class="card-body" class="card-text" class="collapse show" >
-                    <img  class="rounded float-left"  ng-src="{{recipe.imgUrl}}" >
+            <div id="collapseOne"  data-parent="#accordion">
+                <div class="card-body" class="card-text" class="collapse show">
+                    <img class="rounded float-left" ng-src="{{recipe.imgUrl}}">
                     {{recipe.description}}
                 </div>
 
