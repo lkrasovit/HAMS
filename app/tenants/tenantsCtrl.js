@@ -1,19 +1,16 @@
 app.controller("tenantsCtrl", function ($scope,tenants){
 
-
-
   tenants.getActiveUserTenants().then(function (tenants) {
-    debugger;
+   
     $scope.tenants = tenants;
 }, function(error) {
 
 })
-
 $scope.deleteRow = function(index ){
   $scope.tenants.splice(index, 1);
 }
 
-
+})
 
 
 
@@ -96,4 +93,3 @@ $scope.deleteRow = function(index ){
 
 
 
-})

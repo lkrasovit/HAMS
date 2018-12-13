@@ -1,8 +1,6 @@
-
 <navbar-recipe></navbar-recipe>
 
-{{tenants}}
- <div id="contacts">
+<div id="contacts">
     <div class=" card container  mt-5">
         <h4 class="card-title text-center mt-4">Resident list:</h4>
         <table class="table">
@@ -23,7 +21,6 @@
                         <input type="text" class="search" placeholder="Search tenants" />
                     </th>
                 </tr>
-
             </thead>
             <tbody class="list">
                 <tr ng-repeat="row in tenants track by $index ">
@@ -32,14 +29,14 @@
                     <td>{{row.lname}}</td>
                     <td>{{row.apr}}</td>
                     <td>{{row.ml}}</td>
-                    <td><button id="add-btn" ng-click="deleteRow($index)">Delete</button></td>
+                    <td><button  ng-click="deleteRow($index)"><i class="far fa-trash-alt"></button></td>
                     <!-- <td class="add">
                             <button id="add-btn" ng-click="deleteRow($index)">Delete</button>
                             <button id="edit-btn" ng-click="editRow($index)">Edit</button>
                         </td> -->
                 </tr>
             </tbody>
-          
+
         </table>
         <button type="button" onclick="closeWin()" class="close" id="cancel_edit" aria-label="Close">
             <span aria-hidden="true">&times;</span>
@@ -64,4 +61,4 @@
             </td>
         </table>
     </div>
-</div> 
+</div>
