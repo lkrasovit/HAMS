@@ -17,6 +17,9 @@ app.controller("recipeHomeCtrl", function($scope, recipes, user, $location) {
     }, function(error) {
         
     })
+    $scope.deleteRow = function(index ){
+        $scope.recipes.splice(index, 1);
+      }
   
  }) 
 
