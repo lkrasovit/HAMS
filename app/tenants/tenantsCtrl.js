@@ -1,11 +1,23 @@
-app.controller("tenantsCtrl", function ($scope){
+app.controller("tenantsCtrl", function ($scope,tenants){
 
-   var options = {
+
+
+  tenants.getActiveUserRecipes().then(function (tenants) {
+    $scope.tenants = tenants;
+}, function(error) {
+
+})
+
+
+
+
+
+   $scope.options = {
         valueNames: [ 'id', 'fname',"lname", 'apr', 'ml' ]
       };
 
 // Init list
-var contactList = new List('contacts', options);
+$scope.contactList = new List('contacts', options);
   
 var idField = $('#id-field'),
     fnameField = $('#fname-field'),

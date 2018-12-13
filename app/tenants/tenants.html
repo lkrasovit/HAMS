@@ -16,32 +16,48 @@
                 <td class="name">Jonny</td>
                 <td class="age">27</td>
                 <td class="city">Stockholm</td>
-                <td class="edit"><button class="edit-item-btn">Edit</button></td>
-                <td class="remove"><button class="remove-item-btn">Remove</button></td>
+                <td class="edit">
+                    <button class="edit-item-btn">Edit</button>
+                </td>
+                <td class="remove">
+                    <button class="remove-item-btn">Remove</button>
+                </td>
             </tr>
             <tr>
                 <td class="id" style="display:none;">2</td>
                 <td class="name">Jonas</td>
                 <td class="age">-132</td>
                 <td class="city">Berlin</td>
-                <td class="edit"><button class="edit-item-btn">Edit</button></td>
-                <td class="remove"><button class="remove-item-btn">Remove</button></td>
+                <td class="edit">
+                    <button class="edit-item-btn">Edit</button>
+                </td>
+                <td class="remove">
+                    <button class="remove-item-btn">Remove</button>
+                </td>
             </tr>
             <tr>
                 <td class="id" style="display:none;">3</td>
                 <td class="name">Gustaf</td>
                 <td class="age">-23</td>
                 <td class="city">Sundsvall</td>
-                <td class="edit"><button class="edit-item-btn">Edit</button></td>
-                <td class="remove"><button class="remove-item-btn">Remove</button></td>
+                <td class="edit">
+                    <button class="edit-item-btn">Edit</button>
+                </td>
+                <td class="remove">
+                    <button class="remove-item-btn">Remove</button>
+                </td>
             </tr>
             <tr>
                 <td class="id" style="display:none;">4</td>
                 <td class="name">Fredrik</td>
                 <td class="age">26</td>
                 <td class="city">Goteborg</td>
-                <td class="edit"><button class="edit-item-btn">Edit</button></td>
-                <td class="remove"><button class="remove-item-btn">Remove</button></td>
+                <td class="edit">
+                    <button class="edit-item-btn">Edit</button>
+                </td>
+                <td class="remove">
+                    <button class="remove-item-btn">Remove</button>
+                </td>
             </tr>
         </tbody>
     </table>
@@ -79,7 +95,7 @@
                     <th></th>
                     <th scope="col">Apartment</th>
                     <th></th>
-                            <th></th>
+                    <th></th>
                     <th scope="col">Handle</th>
                     <th></th>
                     <th colspan="2">
@@ -91,18 +107,24 @@
             <tbody class="list">
                 <tr>
                     <th class="id" scope="row">1</th>
-                    <td class="fname">Mark   </td>
+                    <td class="fname">Mark </td>
                     <td></td>
                     <td></td>
-                                       <td class="lname">Otto</td>
+                    <td class="lname">Otto</td>
                     <td></td>
                     <td class="apr">13</td>
                     <td></td>
                     <td></td>
                     <td class="mail">@mdo</td>
                     <td></td>
-                    <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
-                    <td class="remove"><button class="remove-item-btn float-right"><i class="far fa-trash-alt"></i></button></td>
+                    <td class="edit">
+                        <button class="edit-item-btn  float-right">Edit</button>
+                    </td>
+                    <td class="remove">
+                        <button class="remove-item-btn float-right">
+                            <i class="far fa-trash-alt"></i>
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <th class="id" scope="row">2</th>
@@ -116,8 +138,14 @@
                     <td></td>
                     <td class="mail">@mdo</td>
                     <td></td>
-                    <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
-                    <td class="remove"><button class="remove-item-btn float-right"><i class="far fa-trash-alt"></i></button></td>
+                    <td class="edit">
+                        <button class="edit-item-btn  float-right">Edit</button>
+                    </td>
+                    <td class="remove">
+                        <button class="remove-item-btn float-right">
+                            <i class="far fa-trash-alt"></i>
+                        </button>
+                    </td>
                 </tr>
                 <tr>
                     <th class="id" scope="row">3</th>
@@ -131,8 +159,17 @@
                     <td></td>
                     <td class="ml">@mdo</td>
                     <td></td>
-                    <td class="edit"><button class="edit-item-btn  float-right">Edit</button></td>
-                    <td class="remove"><button class="remove-item-btn float-right"><i class="far fa-trash-alt"></i></button><span class="glyphicon glyphicon-trash"></span></td>
+                    <td class="edit">
+                         <button type="button" class="btn btn-success  float-right">Edit</button>
+                        <!-- <button class="edit-item-btn  float-right">Edit</button> -->
+                    </td>
+                    <td class="remove">
+                            <button type="button" class="btn btn-info float-right  float-right"><i class="far fa-trash-alt "></i></button>
+                        <!-- <button class="remove-item-btn float-right">
+                            <i class="far fa-trash-alt"></i>
+                        </button> -->
+                        <span class="glyphicon glyphicon-trash"></span>
+                    </td>
                     <!-- <td><button ng-if="col.dataType === 'command'" class="btn btn-danger btn-sm" ng-click=".del(row)"
                         ng-disabled="!demo.isEditing"><span class="glyphicon glyphicon-trash"></span></button>
                 </td> -->
