@@ -10,13 +10,22 @@ $scope.deleteRow = function(index ){
   $scope.tenants.splice(index, 1);
 }
 
+$scope.addBtn.click(function() {
+        tenannts.add({
+//     id: Math.floor(Math.random()*110000),
+//     fname: fnameField.val(),
+//     lname: lnameField.val(),
+//    apr: aprField.val(),
+//     ml: mlField.val()
+//   });
+//   clearFields();
+//   refreshCallbacks();
+// });
 })
 
 
 
-  //  $scope.options = {
-  //       valueNames: [ 'id', 'fname',"lname", 'apr', 'ml' ]
-  //     };
+  
 
 // Init list
 // $scope.contactList = new List('contacts', $scope.options);

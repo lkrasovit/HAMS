@@ -39,4 +39,33 @@ app.factory("tenants", function ($q, $http,user) {
     return {
         getActiveUserTenants: getActiveUserTenants
     }
+
+
+    //create new tenant
+    function createTenant(fname, lname, apr, ml) {
+
+        var async = $q.defer();
+        var userId = user.getActiveUser().id;
+        // var newRecipe = new Recipe({
+        //     id: -1, name: name, description: description,
+        //     ingredients: ingredients, steps: steps, imgUrl: imgUrl,
+        //     userId: userId
+        // });
+        var newTenant = new Tenant({
+            id: -1, name: fname,lname:lname, apr: apr,
+            ml: ml,
+            userId: user.getActiveUser().id
+        });
+
+        tenants[userId].push(newTenant);
+        async.resolve(newTenant);
+        return async.promise;
+    }
+return {
+
+    getActiveUserTenants: getActiveUserTenants,
+    createTenant: createTenant
+}
+
+
 })
