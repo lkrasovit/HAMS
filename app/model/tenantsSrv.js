@@ -37,9 +37,6 @@ app.factory("tenants", function ($q, $http,user) {
 
         return async.promise;
     }
-    return {
-        getActiveUserTenants: getActiveUserTenants
-    }
 
 
     //create new tenant

@@ -40,19 +40,19 @@
         <button type="button" onclick="closeWin()" class="close" id="cancel_edit" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
-        <table class="mb-4">
+        <table class="mb-4" ng-controller="newTenantCtrl">
             <td class="name">
                 <input type="hidden" id="id-field" />
-                <input type="text" id="fname-field" placeholder="First name" />
+                <input type="text" id="fname-field" placeholder="First name" ng-model="fname"/>
             </td>
             <td>
-                <input type="text" id="lname-field" placeholder="Last name" />
+                <input type="text" id="lname-field" placeholder="Last name" ng-model="lname"/>
             </td>
             <td class="apr">
-                <input type="text" id="apr-field" placeholder="Appartment" />
+                <input type="text" id="apr-field" placeholder="Appartment" ng-model="apr"/>
             </td>
             <td class="ml">
-                <input type="text" id="ml-field" placeholder="Mail" />
+                <input type="text" id="ml-field" placeholder="Mail" ng-model="ml"/>
             </td>
             <td class="add">
                 <button id="addbtn" ng-click="createTenant()">Add</button>
