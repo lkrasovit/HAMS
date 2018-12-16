@@ -22,7 +22,7 @@
             "description": "The entrance door lock broke when trying to open the door",
             "ingredients": "Egg, Tomatto, Onion",
             "steps": "Pout eggs and then tomatto",
-            "imgUrl": "",
+            "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZzn0CYwOWF3eacELoepGHVZgL1VOd3PXgtifPyRilfl96d8d2",
             "userId": 1
         },
         {
@@ -31,7 +31,7 @@
             "description": "Next Thursday bugs control works will be carried out around the block",
             "ingredients": "Egg, Tomatto, Onion",
             "steps": "Pout eggs and then tomatto",
-            "imgUrl": "data:image/png;base64,i",
+            "imgUrl": "",
             "userId": 1
         },
         {

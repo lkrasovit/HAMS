@@ -2,6 +2,7 @@ app.factory("tenants", function ($q, $http,user) {
     var activeUser = null;
     var tenants = {};
     var wasEverLoaded = {};
+    
 
     function Tenant(plainUser) {
         this.id = plainUser.id;

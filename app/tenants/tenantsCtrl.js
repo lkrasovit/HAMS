@@ -10,41 +10,13 @@ $scope.deleteRow = function(index ){
   $scope.tenants.splice(index, 1);
 }
 
-$scope.addBtn.click(function() {
-        tenannts.add({
-//     id: Math.floor(Math.random()*110000),
-//     fname: fnameField.val(),
-//     lname: lnameField.val(),
-//    apr: aprField.val(),
-//     ml: mlField.val()
-//   });
-//   clearFields();
-//   refreshCallbacks();
-// });
 
-})
-}
 })
 
 
 
   
 
-// Init list
-// $scope.contactList = new List('contacts', $scope.options);
-  
-// var idField = $('#id-field'),
-//     fnameField = $('#fname-field'),
-//     lnameField = $('#lname-field'),
-//     aprField = $('#apr-field'),
-//     mlField = $('#ml-field'),
-//     addBtn = $('#add-btn'),
-//     editBtn = $('#edit-btn').hide(),
-//     removeBtns = $('.remove-item-btn'),
-//     editBtns = $('.edit-item-btn');
-
-// Sets callbacks to the buttons in the list
-// refreshCallbacks();
 
 // addBtn.click(function() {
 //   contactList.add({
@@ -77,10 +49,7 @@ $scope.addBtn.click(function() {
 //   removeBtns = $(removeBtns.selector);
 //   editBtns = $(editBtns.selector);
   
-//   removeBtns.click(function() {
-//     var itemId = $(this).closest('tr').find('.id').text();
-//     contactList.remove('id', itemId);
-//   });
+//  
   
 //   editBtns.click(function() {
 //     var itemId = $(this).closest('tr').find('.id').text();
