@@ -21,6 +21,9 @@ $scope.addBtn.click(function() {
 //   clearFields();
 //   refreshCallbacks();
 // });
+
+})
+}
 })
 
 

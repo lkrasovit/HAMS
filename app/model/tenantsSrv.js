@@ -52,7 +52,7 @@ app.factory("tenants", function ($q, $http,user) {
         //     userId: userId
         // });
         var newTenant = new Tenant({
-            id: -1, name: fname,lname:lname, apr: apr,
+            id: -1, fname: fname,lname:lname, apr: apr,
             ml: ml,
             userId: user.getActiveUser().id
         });
